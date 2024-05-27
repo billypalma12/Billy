@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tittle{
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #aaaaaa;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+ /* el wrap sirve para cuando este YA EL 100% MANDE LO SIGUIENTE PARA ABAJO */
+.menu a{
+    background-color: #e5e5e5;
+    display: block;
+    padding: 8px;
+    margin-top: 7px;
+}
+.menu{
+    width: 20%;
+}
+.main{
+    width: 60%;
+    padding: 0 20px;
+}
+.about{
+    width: 20%;
+    background-color: blue;
+    text-align: center;
+    padding: 15px;
+}
+.copyright{
+    background-color: #e5e5e5;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+@media screen and (max-width :800px) {
+    .about{
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width :600px) {
+    .container{
+        flex-direction: column;
+    }
+    .container div{
+        width: 100%;
+    }
+} */
+@media screen and (max-width :600px) {
+    .container{
+        flex-direction: column;
+    }
+    .container div{
+        width: 100%;
+    }
+}
